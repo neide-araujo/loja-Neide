@@ -1,4 +1,4 @@
- # Loja Eliana
+ # Loja Neide
 
 Este é o site da Loja Eliana, desenvolvido em HTML, CSS e JavaScript.
 
