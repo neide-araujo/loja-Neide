@@ -1,0 +1,82 @@
+
+ <!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Produtos | Semi Jóias</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Modal escondido -->
+<div id="modal" class="modal">
+  <span class="fechar" onclick="fecharModal()">&times;</span>
+  <img class="modal-conteudo" id="imgModal">
+</div>
+
+<script>
+// Função para abrir modal ao clicar na imagem
+function abrirModal(img) {
+  const modal = document.getElementById("modal");
+  const imgModal = document.getElementById("imgModal");
+
+  modal.style.display = "block";
+  imgModal.src = img.src;
+}
+
+// Função para fechar modal
+function fecharModal() {
+  document.getElementById("modal").style.display = "none";
+}
+
+// Botões do WhatsApp
+const btnsWhats = document.querySelectorAll('.btn-whatsapp');
+btnsWhats.forEach(btn => {
+  btn.addEventListener('click', e => {
+    e.preventDefault();
+    const link = btn.getAttribute('href');
+    window.open(link, '_blank');
+  });
+});
+</script>
+
+    
+    <nav class="menu">
+        <a href="index.html">Início</a>
+        <a href="produtos.html">Produtos</a>
+        <a href="sobre.html">Sobre</a>
+    </nav>
+    <section class="topo">
+        <h1>Nossos Produtos</h1>
+        <h2>Peças selecionadas com cuidado e elegância.</h2>
+    </section>
+
+    
+    <section class="produtos">
+
+  <div class="card">
+    <img class="produto-img" src="img/colares - Copia.png" alt="colares dourado">
+    <h3>colares Dourado</h3>
+    <p>Delicado e sofisticado.</p>
+  </div>
+
+  <div class="card">
+    <img class="produto-img" src="img/brinco.png" alt="brinco feminino">
+    <h3>Anel Elegante</h3>
+    <p>Design moderno e sofisticado.</p>
+  </div>
+
+  <div class="card">
+    <img class="produto-img" src="img/brinco-chapado.png" alt="brinco feminino">
+    <h3>Anel Elegante</h3>
+    <p>Design moderno e sofisticado.</p>
+  </div>
+</section>
+
+    
+    <a class="whatsapp" href="https://wa.me/559182710882" target="_blank">
+        Falar no WhatsApp
+    </a>
+
+</body>
+</html>
+    
